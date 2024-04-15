@@ -67,7 +67,6 @@
 				4209802C29F8B05100A68F40 /* API */,
 				4209802D29F8B05300A68F40 /* Models */,
 				4209801B29F8B01300A68F40 /* ViewController.swift */,
-				4209802E29F8B06300A68F40 /* Constants.swift */,
 				4209802B29F8B03A00A68F40 /* Supporting */,
 				4209802529F8B01500A68F40 /* Info.plist */,
 			);
@@ -88,6 +87,7 @@
 		4209802C29F8B05100A68F40 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				4209802E29F8B06300A68F40 /* Constants.swift */,
 				4209803029F8B0BE00A68F40 /* HTTP.swift */,
 				4209803229F8B0CB00A68F40 /* Endpoint.swift */,
 				4209803629F8B48800A68F40 /* APIService.swift */,
@@ -131,7 +131,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					4209801329F8B01300A68F40 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -235,6 +235,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -296,6 +297,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

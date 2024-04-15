@@ -30,7 +30,7 @@ class APIService: Service {
                 return
             }
             
-            if let resp = resp as? HTTPURLResponse, resp.statusCode != 200 || resp.statusCode != 201 {
+            if let resp = resp as? HTTPURLResponse, resp.statusCode > 299 {
                 completion(nil, .serverError())
                 return
             }
