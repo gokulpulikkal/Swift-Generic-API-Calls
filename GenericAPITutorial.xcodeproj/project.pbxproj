@@ -16,6 +16,7 @@
 		4BF07F3A2BCCB396005A17A3 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF07F372BCCB396005A17A3 /* Endpoint.swift */; };
 		4BF07F3B2BCCB396005A17A3 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF07F382BCCB396005A17A3 /* HTTP.swift */; };
 		4BF07F3C2BCCB396005A17A3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF07F392BCCB396005A17A3 /* APIService.swift */; };
+		4BF07F6A2BCCBB5E005A17A3 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF07F692BCCBB5E005A17A3 /* NetworkServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4BF07F372BCCB396005A17A3 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		4BF07F382BCCB396005A17A3 /* HTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
 		4BF07F392BCCB396005A17A3 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4BF07F692BCCBB5E005A17A3 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				4BF07F392BCCB396005A17A3 /* APIService.swift */,
 				4BF07F372BCCB396005A17A3 /* Endpoint.swift */,
 				4BF07F382BCCB396005A17A3 /* HTTP.swift */,
+				4BF07F692BCCBB5E005A17A3 /* NetworkServiceProtocol.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				4BF07F3C2BCCB396005A17A3 /* APIService.swift in Sources */,
 				4209801829F8B01300A68F40 /* AppDelegate.swift in Sources */,
 				4209801A29F8B01300A68F40 /* SceneDelegate.swift in Sources */,
+				4BF07F6A2BCCBB5E005A17A3 /* NetworkServiceProtocol.swift in Sources */,
 				4BF07F3B2BCCB396005A17A3 /* HTTP.swift in Sources */,
 				4209803529F8B0DC00A68F40 /* Post.swift in Sources */,
 				4BF07F3A2BCCB396005A17A3 /* Endpoint.swift in Sources */,
