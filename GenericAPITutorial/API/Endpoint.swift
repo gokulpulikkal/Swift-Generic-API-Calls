@@ -24,9 +24,9 @@ enum Endpoint {
     
     private var url: URL? {
         var components = URLComponents()
-        components.scheme = Constants.scheme
-        components.host = Constants.baseURL
-        components.port = Constants.port
+        components.scheme = self.scheme
+        components.host = self.baseURL
+        components.port = self.port
         components.path = self.path
         components.queryItems = self.queryItems
         return components.url
@@ -68,6 +68,34 @@ enum Endpoint {
             return jsonPost
         }
     }
+    
+    private var baseURL: String? {
+        switch self {
+        case .fetchPosts,
+                .fetchOnePost,
+                .sendPost:
+            return "jsonplaceholder.typicode.com"
+        }
+    }
+    
+    private var scheme: String? {
+        switch self {
+        case .fetchPosts,
+                .fetchOnePost,
+                .sendPost:
+            return "https"
+        }
+    }
+    
+    private var port: Int? {
+        switch self {
+        case .fetchPosts,
+                .fetchOnePost,
+                .sendPost:
+            return nil
+        }
+    }
+    
 }
 
 extension URLRequest {
