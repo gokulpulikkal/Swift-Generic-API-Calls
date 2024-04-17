@@ -16,7 +16,9 @@ class ViewController: UIViewController, NetworkServiceProtocol {
         
 //        self.singleRequest()
 //        self.arrayRequest()
-        self.postRequest()
+        Task {
+            await postRequest()
+        }
     }
     
     private func singleRequest() {
@@ -41,15 +43,18 @@ class ViewController: UIViewController, NetworkServiceProtocol {
         }
     }
     
-    private func postRequest() {
+    // calling API with async await method
+    private func postRequest() async {
         let post = Post(userId: 5, id: 12, title: "My Post", body: "This is my post!!! Its from CodeBrah")
         let request = Endpoint.sendPost(post: post).request!
         
-        networkManager.makeRequest(with: request, respModel: Post.self) { postedPost, error in
-            if let error = error { print("DEBUG PRINT:", error); return }
-            
-            print("DEBUG PRINT:", postedPost)
+        do {
+            let postResponse = try await networkManager.makeRequest(with: request, respModel: Post.self)
+            print("DEBUG PRINT:", postResponse)
+        } catch {
+            print("the error: \(error)")
         }
+        
     }
     
 }

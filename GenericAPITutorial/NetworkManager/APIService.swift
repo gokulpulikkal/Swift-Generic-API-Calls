@@ -54,3 +54,15 @@ class APIService: Service {
     }
     
 }
+
+extension APIService {
+    func makeRequest<T: Codable>(with request: URLRequest, respModel: T.Type) async throws -> T {
+        do {
+            let (data, _) = try await URLSession.shared.data(for: request)
+            let result = try JSONDecoder().decode(T.self, from: data)
+            return result
+        } catch {
+            throw error
+        }
+    }
+}
